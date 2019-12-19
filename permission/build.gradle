@@ -1,0 +1,18 @@
+apply plugin: rootProject.ext.plugins.library
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+    }
+
+    resourcePrefix 'permission'
+}
+
+dependencies {
+    api rootProject.ext.dependencies.SupportV7
+    api rootProject.ext.dependencies.Annotation
+}
