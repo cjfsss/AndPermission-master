@@ -45,7 +45,7 @@ ext {
             groupId        : 'com.yanzhenjie',
             Permission     : [
                     artifactId: 'permission-support',
-                    version   : '1.0.0'
+                    version   : '2.0.3'
             ]
     ]
 
