@@ -35,6 +35,20 @@ ext {
                bintrayUser   : 'yolanda',
                bintrayLicense: "Apache-2.0"]
 
+    mavens = [
+            // Licence信息  基本是固定的
+            projLicenceName: 'The Apache Software License, Version 2.0',
+            projLicenceUrl : 'http://www.apache.org/licenses/LICENSE-2.0.txt',
+            projLicenceDest: 'repo',
+            localUrl       : 'file:///C:/Users/Administrator/.m2/repository',
+            jitpackUrl     : 'https://www.jitpack.io',
+            groupId        : 'com.yanzhenjie',
+            Permission     : [
+                    artifactId: 'permission-support',
+                    version   : '1.0.0'
+            ]
+    ]
+
     dependencies = [
             SupportV7 : "com.android.support:appcompat-v7:28.0.0",
             Annotation: "com.android.support:support-annotations:28.0.0",

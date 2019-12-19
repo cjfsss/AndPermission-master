@@ -16,3 +16,15 @@ dependencies {
     api rootProject.ext.dependencies.SupportV7
     api rootProject.ext.dependencies.Annotation
 }
+
+apply plugin: 'maven'
+uploadArchives{
+    def mavens = rootProject.ext.mavens
+    repositories.mavenDeployer{
+        repository(url: uri('../maven'))
+//        repository(url:mavens.localUrl)
+        pom.groupId = mavens.groupId
+        pom.artifactId = mavens.Permission.artifactId
+        pom.version = mavens.Permission.version
+    }
+}
